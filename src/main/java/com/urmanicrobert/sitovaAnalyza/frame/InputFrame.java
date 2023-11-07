@@ -33,7 +33,10 @@ public class InputFrame extends MainFrame implements Runnable{
                 try {
                     for (JTextField[] jTextFields : textFieldArray) {
                         listOfTasks.add(new Task(jTextFields));
+                        // System.out.println(new Task(jTextFields));
                     }
+
+                    Task.uzloUzlovaMatice(listOfTasks);
 
                 } catch (NumberFormatException ex){
                     JOptionPane.showMessageDialog(frame, "Údaje jsou špatně formátovány: " + ex.getMessage());
