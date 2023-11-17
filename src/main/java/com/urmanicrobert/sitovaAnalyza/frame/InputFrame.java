@@ -36,7 +36,12 @@ public class InputFrame extends MainFrame implements Runnable{
                         // System.out.println(new Task(jTextFields));
                     }
 
-                    Task.uzloUzlovaMatice(listOfTasks);
+                    //Task.uzloUzlovaMatice(listOfTasks);
+                    // System.out.println("Velikost: " + Task.uzloUzlovaMatice(listOfTasks).size());
+
+                    System.out.println("Tadá: " + Task.setTimes(Task.uzloUzlovaMatice(listOfTasks)));
+
+                    System.out.println("Skončilo to");
 
                 } catch (NumberFormatException ex){
                     JOptionPane.showMessageDialog(frame, "Údaje jsou špatně formátovány: " + ex.getMessage());
